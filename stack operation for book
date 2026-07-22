@@ -31,7 +31,7 @@ class Stack:
             for i in range(len(self.stack) - 1, -1, -1):
                 print(self.stack[i])
 
-size = int(input("Enter Stack Size: "))
+size = int(input("Enter books to be published: "))
 s = Stack(size)
 
 while True:
@@ -52,7 +52,7 @@ while True:
     elif ch == 4:
         s.display()
     elif ch == 5:
-        print("Program Ended")
+        print("finish")
         break
     else:
         print("Invalid Choice")
