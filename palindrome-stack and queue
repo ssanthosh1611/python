@@ -1,0 +1,12 @@
+from collections import deque
+def is_palindrome(text):
+    d = deque(text)
+    while len(d) > 1:
+        if d.popleft() != d.pop():
+            return False
+        return True
+s=input("Enter a string:")
+if is_palindrome(s)==True:
+    print("The given word is a palindrome")
+else:
+    print("The given word is not a palindrome")
